@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Comic Relief', sans-serif;
+    background: linear-gradient(135deg, #3a0ca3, #7209b7, #b5179e, #f72585);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+    padding: 2rem;
+    color:black;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.heading h1{
+    color:white;
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+.heading h2{
+  color:#b8f725;
+}
+.heading .tagline{
+    color:aqua;
+    font-family: "Comic Relief", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+}
+.plans-container{
+    display: flex;
+    justify-content: center; 
+    gap:2rem;
+    flex-wrap: wrap; 
+}
+.plans-container >div {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    width:300px;
+}
+.plans-container > div:hover {
+  transform: scale(1.05);
+}
+.plans-container h2 {
+  font-size: 1.8rem;
+  margin-bottom:0.3rem;
+}
+.subtext {
+  font-size: 1rem;
+  color: #2d17be;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 2.2rem;
+  margin:0;
+  color: #333;
+}
+.per {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 1.5rem;
+}
+ul li {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4DA1A9;
+}
+button{
+    border:none;
+    padding:0.8rem 1.5rem;
+    border-radius:30px;
+    background-color: #2d17be;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
+.plan-mint {
+  border-top: 8px solid #79D7BE;
+  border-bottom: 8px solid #79D7BE;
+}
+.mint-btn {
+  background-color: #79D7BE;
+}
+.plan-sunset {
+  border-top: 8px solid #FDB813;
+  border-top: 8px solid #FDB813;
+}
+.sunset-btn {
+  background-color: #FDB813;
+}
+.plan-galaxy {
+  border-top: 8px solid #C94C4C;
+  border-bottom: 8px solid #C94C4C;
+}
+.galaxy-btn {
+  background-color: #C94C4C;
+}
+
+@media (max-width: 960px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plans-container > div {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+
+  .heading .tagline {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  .heading .tagline {
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
